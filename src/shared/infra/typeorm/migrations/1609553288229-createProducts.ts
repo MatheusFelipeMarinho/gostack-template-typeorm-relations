@@ -20,7 +20,7 @@ export default class createProducts1609553288229 implements MigrationInterface {
           {
             name: 'price',
             type: 'decimal',
-            precision: 2,
+            precision: 10,
             scale: 2,
           },
           {
@@ -29,6 +29,11 @@ export default class createProducts1609553288229 implements MigrationInterface {
           },
           {
             name: 'updated_at',
+            type: 'timestamp',
+            default: 'now()',
+          },
+          {
+            name: 'created_at',
             type: 'timestamp',
             default: 'now()',
           },
